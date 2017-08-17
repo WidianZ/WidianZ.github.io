@@ -13,12 +13,12 @@ $( document ).ready(function() {
   $('.select').selectmenu();
 
   $('.form-control').focus(function() {
-    $(this).siblings('label').css({'top': '3px', 'font-size': '10px', 'line-height': '10px'});
+    $(this).parent().addClass('is-active');
   });
 
   $('.form-control').blur(function() {
     if ($(this).val().length === 0) {
-      $(this).siblings('label').css({'top': '0', 'font-size': '16px', 'line-height': '50px'});
+      $(this).parent().removeClass('is-active');
     }
   });
 
