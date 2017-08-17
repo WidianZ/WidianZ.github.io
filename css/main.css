@@ -199,6 +199,10 @@ table {
   border-radius: 2px; }
   .banner-form .form-control, .banner-form .select + .ui-selectmenu-button.ui-button, .banner-form .checkbox {
     margin-top: 15px; }
+  .banner-form .btn {
+    margin-top: 18px; }
+  .banner-form .link {
+    margin-left: 55px; }
 
 .banner-form_title {
   margin-top: 1px;
@@ -206,11 +210,6 @@ table {
   color: #4488bb;
   font-size: 24px;
   font-weight: 700; }
-
-.banner-form_controls {
-  margin-top: 18px; }
-  .banner-form_controls .link {
-    margin-left: 55px; }
 
 @media only screen and (min-width: 768px) {
   .banner-text {
@@ -239,10 +238,10 @@ table {
     margin: 30px 100px 30px 20px;
     padding: 20px;
     float: right; }
+    .banner-form .link {
+      margin-left: 20px; }
   .banner-form_title {
-    margin: 2px 0 0; }
-  .banner-form_controls .link {
-    margin-left: 20px; } }
+    margin: 2px 0 0; } }
 
 .post {
   position: relative;
@@ -610,7 +609,7 @@ sup {
 .container {
   margin: auto;
   padding: 0 10px;
-  min-width: 320px;
+  min-width: 300px;
   max-width: 767px; }
 
 .posts-list {

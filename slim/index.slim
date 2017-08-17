@@ -21,8 +21,9 @@ html
           .form-group 
             input#name-field.form-control type='text'
             label for='name-field' Enter your name
+            .error-message Enter correct Name
           select.select
-            <option disabled selected>Select your country</option>
+            <option value="default" disabled selected>Select your country</option>
             <option>Russia</option>
             <option>USA</option>
             <option>China</option>
@@ -30,9 +31,8 @@ html
           .checkbox
             input#terms-checkbox type='checkbox'
             label for='terms-checkbox' I agree with Terms & Conditions
-          .banner-form_controls
-            .btn.btn_accept.banner-form_accept Submit
-            a.link href='#' Hyperlink
+          .btn.btn_accept.banner-form_accept Submit
+          a.link href='#' Hyperlink
     .main-content
       .container
         .posts-list
