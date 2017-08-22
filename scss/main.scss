@@ -1,80 +1,133 @@
-@import 'reset';
-@import 'forms';
-@import 'banner';
-@import 'post';
-@import 'promo-block';
-@import 'footnote';
-@import 'modal';
-@import 'ui-selectmenu';
+@import 'navbar';
+@import 'carousel';
+@import 'footer';
+@import 'copyright';
 
-.clearfix:after {
-  content: ".";
+.header {
+  background: #212121;
+}
+
+.header_logo {
+  padding: 10px 0 15px;
+  float: left;
+  margin-left: 15px;
+}
+
+.header_call {
+  float: right;
+  margin: 7px 15px 0 0;
   display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
+  padding: 0 18px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  background: transparent;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 31px;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
-body {
-  position: relative;
-  font-family: "Arial";
-  counter-reset: item;
-  counter-reset: footnote;
-}
+.btn {
+  display: inline-block;
+  padding: 0 42px;
+  border: 2px solid transparent;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 41px;
+  cursor: pointer;
+  transition: 0.3s;
 
-sup {
-  position: relative;
-  top: -8px;
-  font-size: 13px;
-}
+  & + .btn {
+    margin-left: 30px;
+  }
 
-.link {
-  color: #aaa;
-  font-size: 16px;
-  text-decoration: none;
-
-  &:visited {
-    color: #aaa;
+  &:hover {
+    background: transparent;
+    transition: 0.3s;
   }
 }
 
-.container {
-  margin: auto;
-  padding: 0 10px;
-  min-width: 300px;
-  max-width: 767px;
+.btn-1 {
+  background: #4ec67f;
+  border-color: #4ec67f;
+
+  &:hover {
+    background: #3e9e65;
+    color: #fff;
+    border-color: #3e9e65; 
+  }
+
 }
 
-.posts-list {
-  margin-top: 20px;
-}
+.btn-2 {
+  border-color: #fff;
+  background: transparent;
 
-.footer {
-  background:#fff;
-  padding: 23px 0;
-}
-
-@media only screen and (min-width:768px) {
-  .container {
-    margin: auto;
-    max-width: 760px;
+  &:hover {
+    background: transparent;
+    color: #fff;
+    border-color: #fff;
   }
 }
 
-
-@media only screen and (min-width:960px) {
-  .container {
-    margin: auto;
-    padding: 0 5px;
-    max-width: 1200px;
+#modalContact {
+  .modal-dialog {
+    max-width: 420px;
   }
 
-  .posts-list {
-    margin-top: 75px;
+  .modal-header {
+    padding: 24px 30px 7px;
+    text-align: center;
+    border: none;
   }
 
-  .footer {
-    padding: 21px 0;
+  .modal-title {
+    color: #424242;
+    font-size: 24px;
+    text-transform: uppercase;
   }
+
+  .modal-subtitle {
+    margin: 15px 0 0;
+    color: #bdbdbd;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  .modal-body {
+    padding: 15px 30px 15px; 
+
+    .btn {
+      width: 100%;
+      background: #fff;
+      color: #616161;
+      border: 1px solid #616161;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 38px;
+    }
+  }
+
+  .checkbox {
+    label {
+      color: #bdbdbd;
+      font-size: 12px;
+      text-decoration: underline;
+      text-decoration-style: dashed;
+      line-height: 1.2;
+    }
+  }
+
+  .has-error {
+    .checkbox > label {
+      color: #a94442;
+    }
+  }
+}
+
+.form-control {
+  height: 40px;
 }
