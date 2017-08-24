@@ -542,6 +542,102 @@
   background: #000;
 }
 
+.productsListItem {
+  float: left;
+}
+
+.productsListItem + .productsListItem {
+  margin-left: 53px;
+}
+
+.productsListItem:nth-child(5n) {
+  margin-left: 0;
+}
+
+.productsListItem:nth-child(n + 5) {
+  margin-top: 73px;
+}
+
+.pormoProducts {
+  padding: 62px 0 40px;
+  font-family: "CarismaClassic";
+}
+
+.productsList {
+  margin-top: 65px;
+}
+
+.proudctPic img {
+  display: block;
+}
+
+.productsTitle {
+  color: #010101;
+  font-size: 33px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.productTitle {
+  margin: 30px 0 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.productDesc {
+  margin: 11px 0 0;
+  font-size: 20px;
+}
+
+.productPrice {
+  margin: 27px 0 0;
+  float: left;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.productPrice span {
+ font-size: 20px;
+}
+
+.btnBuy {
+  display: block;
+  float: right;
+  margin: 24px 0 0;
+  padding: 10px 15px 8px 14px;
+  width: 60px;
+  height: 50px;
+  background: #f40000;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btnBuy:before {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url(../img/btn-buy.png);
+  content: '';
+}
+
+.btnMore {
+  display: block;
+  width: 432px;
+  border: 1px solid #000;
+  color: #000;
+  font-size: 25px;
+  line-height: 74px;
+  margin: 63px auto 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.note {
+  font-size: 20px;
+  margin: 39px 0 0;
+  line-height: 1.15;
+}
+
 .slider-in {
   position: relative;
   width: 1020px;
