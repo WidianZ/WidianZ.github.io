@@ -1,12 +1,12 @@
 @font-face {
   font-family: "CarismaClassic";
-  src: url("../fonts/carismaclassic-regular.otf") format("opentype");
+  src: url("../fonts/carismaclassic-regular.woff") format("woff");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "CarismaClassic";
-  src: url("../fonts/carismaclassic-bold.otf") format("opentype");
+  src: url("../fonts/carismaclassic-bold.woff") format("woff");
   font-weight: 700;
 }
 
