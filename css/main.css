@@ -351,7 +351,7 @@ body {
 }
 
 .newMainMenu__item + .newMainMenu__item {
-  margin-left: 64px;
+  margin-left: 63px;
 }
 
 .newMainMenu__link {
@@ -576,7 +576,7 @@ body {
   width: 554px;
   height: 639px;
   margin: auto;
-  padding: 43px 38px;
+  padding: 43px 37px;
   background: #fff;
   font-size: 29px;
   text-align: center;
