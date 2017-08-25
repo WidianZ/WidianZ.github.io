@@ -455,14 +455,14 @@ body {
   background: #000;
   width: 823px;
   margin: auto;
-  padding: 65px 55px 83px;
+  padding: 62px 55px 83px;
   color: #fff;
   text-align: center;
   font-size: 33px;
 }
 
 .promoDescContent_text {
-  margin: 44px 0 0;
+  margin: 42px 0 0;
   line-height: 1.23;
 }
 
@@ -586,11 +586,11 @@ body {
 }
 
 .pormoProducts {
-  padding: 62px 0 40px;
+  padding: 60px 0 40px;
 }
 
 .productsList {
-  margin-top: 65px;
+  margin-top: 62px;
 }
 
 .proudctPic img {
@@ -611,12 +611,12 @@ body {
 }
 
 .productDesc {
-  margin: 11px 0 0;
+  margin: 9px 0 0;
   font-size: 20px;
 }
 
 .productPrice {
-  margin: 27px 0 0;
+  margin: 25px 0 0;
   float: left;
   font-size: 38px;
   font-weight: 700;
@@ -629,7 +629,7 @@ body {
 .btnBuy {
   display: block;
   float: right;
-  margin: 24px 0 0;
+  margin: 21px 0 0;
   padding: 10px 15px 8px 14px;
   width: 60px;
   height: 50px;
@@ -662,6 +662,15 @@ body {
   font-size: 20px;
   margin: 39px 0 0;
   line-height: 1.15;
+}
+
+ol {
+  counter-reset: item;
+}
+
+ol > li:before {
+  content: counters(item, ".") " ";
+  counter-increment: item
 }
 
 .slider-in {
