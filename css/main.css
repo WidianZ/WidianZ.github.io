@@ -653,6 +653,7 @@ body {
 .productDesc {
   margin: 9px 0 0;
   font-size: 20px;
+  min-height: 69px;
 }
 
 .productPrice {
