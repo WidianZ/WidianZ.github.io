@@ -627,11 +627,12 @@ body {
   margin-top: 62px;
 }
 
-.proudctPic {
+.productPic {
   width: 215px;
+  height: 215px;
 }
 
-.proudctPic img {
+.productPic img {
   width: 100%;
   display: block;
 }
