@@ -604,6 +604,7 @@ body {
 
 .productsListItem {
   float: left;
+  width: 215px;
 }
 
 .productsListItem + .productsListItem {
@@ -626,7 +627,12 @@ body {
   margin-top: 62px;
 }
 
+.proudctPic {
+  width: 215px;
+}
+
 .proudctPic img {
+  width: 100%;
   display: block;
 }
 
