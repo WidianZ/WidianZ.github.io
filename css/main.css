@@ -547,18 +547,29 @@ body {
   max-width: 1256px;
   margin: auto;
   width: 100%;
-  background: url(../img/promotion-bg.jpg) top left no-repeat;
+  height: 639px;
+}
+
+.promotionFrame, .promotionImage, .promotionDesc {
+  float: left;
+}
+
+.promotionFrame, .promotionImage {
+  display: block;
+  height: 100%;
+  max-width: 351px;
+  width: 21%;
+  min-width: 201px;
+}
+
+.promotionImage {
+  background: url(../img/promotion-bg.jpg);
 }
 
 .promotionFrame {
-  position: absolute;
-  right: 0;
-  top: 0;
+  position: relative;
+  background: url(../img/promotion-frame.jpg);
   cursor: pointer;
-}
-
-.promotionFrame img {
-  display: block;
 }
 
 .promotionFrame:before {
@@ -577,9 +588,8 @@ body {
 
 .promotionDesc {
   position: relative;
-  width: 554px;
+  width: 58%;
   height: 639px;
-  margin: auto;
   padding: 43px 37px;
   background: #fff;
   font-size: 29px;
@@ -905,4 +915,24 @@ ol > li:before {
 
 .lightbox-content iframe {
   display: block;
+}
+
+@media (min-width: 1120px) {
+  .promotionDesc {
+    width: 50%;
+  }
+
+  .promotionFrame, .promotionImage {
+    width: 25%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .promotionDesc {
+    width: 44%;
+  }
+
+  .promotionFrame, .promotionImage {
+    width: 28%;
+  }
 }
