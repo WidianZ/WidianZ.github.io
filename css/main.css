@@ -397,6 +397,7 @@ body {
 }
 
 .promoTop {
+  min-width: 960px;
   height: 420px;
   background-color: #57bcd0;
   background-image: url(../img/bg-pattern.png);
@@ -454,6 +455,7 @@ body {
 }
 
 .promoDesc {
+  min-width: 960px;
   background: linear-gradient(to top, #00bdd2 50%, #ffbccf 50%);
   padding: 98px 0 91px;
 }
@@ -529,11 +531,13 @@ body {
 }
 
 .promoSlider {
+  min-width: 960px;
   padding: 45px 0 57px;
   background: #000;
 }
 
 .pormotion {
+  min-width: 960px;
   padding: 35px 0 39px;
   background: #ff7698;
 }
@@ -581,6 +585,7 @@ body {
   font-size: 29px;
   text-align: center;
   line-height: 1.23;
+  z-index: 1;
 }
 
 .promotionBg {
@@ -668,7 +673,7 @@ body {
 }
 
 .btnBuy {
-  display: block;
+  display: none;
   float: right;
   margin: 21px 0 0;
   padding: 10px 15px 8px 14px;
